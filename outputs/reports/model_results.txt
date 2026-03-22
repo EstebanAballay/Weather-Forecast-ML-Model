@@ -4,14 +4,14 @@
 
 Model                               MAE     RMSE       R²     Time
 ----------------------------------------------------------------------
-⭐ Stacking Ensemble               1.779    2.595   0.9280   255.1s
-⭐ Voting Ensemble                 1.867    2.697   0.9222   118.2s
-XGBoost                           1.876    2.704   0.9218     0.6s
-Random Forest                     1.859    2.741   0.9197    21.9s
-LightGBM                          1.978    2.827   0.9146     0.7s
-Gradient Boosting                 2.029    2.900   0.9101    84.0s
-SVR                               2.729    3.959   0.8324    16.8s
+⭐ Stacking Ensemble               1.779    2.595   0.9280   260.9s
+⭐ Voting Ensemble                 1.867    2.697   0.9222   120.2s
+XGBoost                           1.876    2.704   0.9218     0.9s
+Random Forest                     1.859    2.741   0.9197    22.2s
+LightGBM                          1.978    2.827   0.9146     1.1s
+Gradient Boosting                 2.029    2.900   0.9101    84.7s
+SVR                               2.729    3.959   0.8324    17.1s
 Ridge Regression                  5.645    7.096   0.4617     0.0s
-Linear Regression                 5.645    7.096   0.4617     0.0s
+Linear Regression                 5.645    7.096   0.4617     0.1s
 
 🏆 Best model: ⭐ Stacking Ensemble  (R² = 0.9280)
