@@ -1,0 +1,224 @@
+======================================================================
+  DATA SUMMARY REPORT
+======================================================================
+
+ Shape: 130,393 rows × 41 columns
+
+Column                                     Dtype                Non-Null
+----------------------------------------------------------------------
+country                                    str                   130,393
+location_name                              str                   130,393
+latitude                                   float64               130,393
+longitude                                  float64               130,393
+timezone                                   str                   130,393
+last_updated_epoch                         int64                 130,393
+last_updated                               datetime64[us]        130,393
+temperature_celsius                        float64               130,393
+temperature_fahrenheit                     float64               130,393
+condition_text                             str                   130,393
+wind_mph                                   float64               130,393
+wind_kph                                   float64               130,393
+wind_degree                                int64                 130,393
+wind_direction                             str                   130,393
+pressure_mb                                float64               130,393
+pressure_in                                float64               130,393
+precip_mm                                  float64               130,393
+precip_in                                  float64               130,393
+humidity                                   int64                 130,393
+cloud                                      int64                 130,393
+feels_like_celsius                         float64               130,393
+feels_like_fahrenheit                      float64               130,393
+visibility_km                              float64               130,393
+visibility_miles                           float64               130,393
+uv_index                                   float64               130,393
+gust_mph                                   float64               130,393
+gust_kph                                   float64               130,393
+air_quality_Carbon_Monoxide                float64               130,393
+air_quality_Ozone                          float64               130,393
+air_quality_Nitrogen_dioxide               float64               130,393
+air_quality_Sulphur_dioxide                float64               130,393
+air_quality_PM2.5                          float64               130,393
+air_quality_PM10                           float64               130,393
+air_quality_us-epa-index                   int64                 130,393
+air_quality_gb-defra-index                 int64                 130,393
+sunrise                                    str                   130,393
+sunset                                     str                   130,393
+moonrise                                   str                   130,393
+moonset                                    str                   130,393
+moon_phase                                 str                   130,393
+moon_illumination                          int64                 130,393
+
+======================================================================
+  MISSING VALUES
+======================================================================
+
+ No missing values found in any column.
+
+
+======================================================================
+  NUMERICAL SUMMARY (describe)
+======================================================================
+                                 count                        mean              std                  min                  25%                  50%                  75%                  max
+latitude                      130393.0                   19.203898        24.420223                -41.3                 3.87                17.25                 40.4                64.15
+longitude                     130393.0                   21.975347        65.788585               -175.2              -6.8361              23.2361                50.58               179.22
+last_updated_epoch            130393.0           1744864197.998359  16741338.620674         1715849100.0         1730365200.0         1744879500.0         1759303800.0         1773901800.0
+last_updated                    130393  2025-04-17 06:39:06.082228              NaN  2024-05-16 01:45:00  2024-10-31 20:00:00  2025-04-17 11:00:00  2025-10-01 14:00:00  2026-03-19 19:30:00
+temperature_celsius           130393.0                   21.393049         9.690874                -29.8                 16.1                 24.0                 28.0                 49.2
+temperature_fahrenheit        130393.0                   70.509273        17.443417                -21.6                 61.0                 75.2                 82.4                120.6
+wind_mph                      130393.0                    8.041106         7.291233                  2.2                  3.8                  6.9                 11.0               1841.2
+wind_kph                      130393.0                   12.944508        11.730955                  3.6                  6.1                 11.2                 17.6               2963.2
+wind_degree                   130393.0                  168.916192        103.59257                  1.0                 80.0                161.0                255.0                360.0
+pressure_mb                   130393.0                 1014.098426        10.487106                947.0               1010.0               1014.0               1018.0               3006.0
+pressure_in                   130393.0                   29.945693         0.309649                27.96                29.83                29.93                30.06                88.77
+precip_mm                     130393.0                    0.135171         0.564072                  0.0                  0.0                  0.0                 0.03                42.24
+precip_in                     130393.0                    0.005125         0.022294                  0.0                  0.0                  0.0                  0.0                 1.66
+humidity                      130393.0                    66.42513        23.982923                  2.0                 50.0                 72.0                 86.0                100.0
+cloud                         130393.0                   40.000537        34.098844                  0.0                  0.0                 31.0                 75.0                100.0
+feels_like_celsius            130393.0                   22.260845        11.585555                -36.7                 16.1                 25.2                 30.0                 51.2
+feels_like_fahrenheit         130393.0                   72.063764         20.85161                -34.0                 61.0                 77.4                 86.0                124.2
+visibility_km                 130393.0                    9.505747          2.68759                  0.0                 10.0                 10.0                 10.0                 32.0
+visibility_miles              130393.0                    5.614926         1.679643                  0.0                  6.0                  6.0                  6.0                 19.0
+uv_index                      130393.0                    3.376691         3.556408                  0.0                  0.1                  2.0                  6.0                 16.3
+gust_mph                      130393.0                   11.365743          8.64565                  2.2                  6.4                  9.6                 15.1               1845.7
+gust_kph                      130393.0                   18.293315        13.913775                  3.6                 10.3                 15.4                 24.3               2970.4
+air_quality_Carbon_Monoxide   130393.0                  468.394132       768.987483              -9999.0                207.0                299.7                467.3            38879.398
+air_quality_Ozone             130393.0                   58.424157        30.950204                  0.0                 38.0                 55.1                 74.0                480.7
+air_quality_Nitrogen_dioxide  130393.0                   15.132711        23.965971                  0.0                1.665                 5.55               17.575                427.7
+air_quality_Sulphur_dioxide   130393.0                   10.518721        36.263727              -9999.0                  1.1                2.405                 8.51               521.33
+air_quality_PM2.5             130393.0                    24.44336        37.356829                0.168                 7.15               14.245                27.95               1614.1
+air_quality_PM10              130393.0                   48.920907       150.861815             -1848.15                 10.0               20.165                41.81              6037.29
+air_quality_us-epa-index      130393.0                    1.706411         0.945979                  1.0                  1.0                  1.0                  2.0                  6.0
+air_quality_gb-defra-index    130393.0                    2.623607         2.459816                  1.0                  1.0                  2.0                  3.0                 10.0
+moon_illumination             130393.0                   49.579625        35.069177                  0.0                 15.0                 49.0                 84.0                100.0
+
+======================================================================
+  CATEGORICAL COLUMNS — TOP VALUES
+======================================================================
+
+ Occurrences of country (211 unique)
+----------------------------------------
+  Bulgaria                          1,545  (1.2%)
+  Indonesia                         1,341  (1.0%)
+  Thailand                          1,340  (1.0%)
+  Turkey                            1,336  (1.0%)
+  Sudan                             1,336  (1.0%)
+  Bolivia                           1,329  (1.0%)
+  Iran                              1,304  (1.0%)
+  Belgium                           1,266  (1.0%)
+  Madagascar                        1,128  (0.9%)
+  Vietnam                           1,112  (0.9%)
+
+ Occurrences of location_name (257 unique)
+----------------------------------------
+  Kabul                               671  (0.5%)
+  Bujumbura                           671  (0.5%)
+  N'djamena                           671  (0.5%)
+  Malabo                              671  (0.5%)
+  Asmara                              671  (0.5%)
+  Suva                                671  (0.5%)
+  Accra                               671  (0.5%)
+  Vatican City                        671  (0.5%)
+  Baghdad                             671  (0.5%)
+  Tokyo                               671  (0.5%)
+
+ Occurrences of timezone (199 unique)
+----------------------------------------
+  Asia/Bangkok                      2,421  (1.9%)
+  Europe/Sofia                      1,509  (1.2%)
+  Europe/Rome                       1,447  (1.1%)
+  America/La_Paz                    1,354  (1.0%)
+  Asia/Jakarta                      1,341  (1.0%)
+  Europe/Istanbul                   1,338  (1.0%)
+  Africa/Khartoum                   1,336  (1.0%)
+  Asia/Tehran                       1,304  (1.0%)
+  Europe/Brussels                   1,267  (1.0%)
+  Indian/Antananarivo               1,128  (0.9%)
+
+ Occurrences of condition_text (49 unique)
+----------------------------------------
+  Partly cloudy                    38,053  (29.2%)
+  Sunny                            37,644  (28.9%)
+  Patchy rain nearby               10,761  (8.3%)
+  Partly Cloudy                     7,923  (6.1%)
+  Overcast                          7,011  (5.4%)
+  Clear                             6,746  (5.2%)
+  Mist                              5,462  (4.2%)
+  Light rain                        4,080  (3.1%)
+  Light rain shower                 2,999  (2.3%)
+  Fog                               1,621  (1.2%)
+
+ Occurrences of wind_direction (16 unique)
+----------------------------------------
+  E                                12,352  (9.5%)
+  ENE                              10,827  (8.3%)
+  ESE                               9,019  (6.9%)
+  N                                 8,688  (6.7%)
+  NNE                               8,554  (6.6%)
+  S                                 7,992  (6.1%)
+  WSW                               7,717  (5.9%)
+  SSW                               7,709  (5.9%)
+  SW                                7,685  (5.9%)
+  SSE                               7,639  (5.9%)
+
+ Occurrences of sunrise (495 unique)
+----------------------------------------
+  06:10 AM                          1,347  (1.0%)
+  05:57 AM                          1,345  (1.0%)
+  05:56 AM                          1,324  (1.0%)
+  06:11 AM                          1,319  (1.0%)
+  06:17 AM                          1,313  (1.0%)
+  05:55 AM                          1,312  (1.0%)
+  06:21 AM                          1,299  (1.0%)
+  06:24 AM                          1,293  (1.0%)
+  05:54 AM                          1,281  (1.0%)
+  05:58 AM                          1,278  (1.0%)
+
+ Occurrences of sunset (547 unique)
+----------------------------------------
+  06:02 PM                          1,287  (1.0%)
+  06:03 PM                          1,210  (0.9%)
+  06:28 PM                          1,167  (0.9%)
+  06:11 PM                          1,148  (0.9%)
+  06:13 PM                          1,145  (0.9%)
+  06:17 PM                          1,124  (0.9%)
+  06:04 PM                          1,122  (0.9%)
+  06:06 PM                          1,118  (0.9%)
+  06:21 PM                          1,116  (0.9%)
+  06:29 PM                          1,116  (0.9%)
+
+ Occurrences of moonrise (1444 unique)
+----------------------------------------
+  No moonrise                       4,448  (3.4%)
+  12:00 AM                            245  (0.2%)
+  01:05 PM                            127  (0.1%)
+  09:27 AM                            118  (0.1%)
+  12:51 AM                            116  (0.1%)
+  05:52 AM                            116  (0.1%)
+  11:45 AM                            116  (0.1%)
+  02:05 PM                            115  (0.1%)
+  01:54 PM                            113  (0.1%)
+  06:15 PM                            113  (0.1%)
+
+ Occurrences of moonset (1444 unique)
+----------------------------------------
+  No moonset                        4,276  (3.3%)
+  12:00 AM                            252  (0.2%)
+  10:33 AM                            123  (0.1%)
+  05:53 PM                            121  (0.1%)
+  01:08 AM                            119  (0.1%)
+  12:01 AM                            119  (0.1%)
+  01:55 AM                            118  (0.1%)
+  01:53 AM                            116  (0.1%)
+  02:03 AM                            114  (0.1%)
+  09:31 AM                            114  (0.1%)
+
+ Occurrences of moon_phase (8 unique)
+----------------------------------------
+  Waning Crescent                  28,697  (22.0%)
+  Waxing Gibbous                   28,094  (21.5%)
+  Waxing Crescent                  27,903  (21.4%)
+  Waning Gibbous                   27,135  (20.8%)
+  Full Moon                         4,715  (3.6%)
+  Last Quarter                      4,702  (3.6%)
+  New Moon                          4,676  (3.6%)
+  First Quarter                     4,471  (3.4%)
