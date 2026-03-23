@@ -36,6 +36,6 @@ If you prefer to run the project manually step-by-step instead of using the auto
 ```bash
 python src/main.py
 ```
-*Note: The `src/main.py` script contains the core Python logic and assumes your environment and data are already fully prepared.*If you don't want to wait until the model is trained each time you want to run the project,you can simply comment the run_model(df) line of phase 6.
+Note: The `src/main.py` script contains the core Python logic and assumes your environment and data are already fully prepared. If you don't want to wait until the model is trained each time you want to run the project,you can simply comment the run_model(df) line of phase 6.
 
 
