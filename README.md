@@ -3,7 +3,7 @@
 This is an end-to-end Machine Learning pipeline that automates the extraction, exploration, training, and reporting of global weather data. It trains a Stacking Ensemble model to predict temperatures and generates a comprehensive 7-day forecast.
 
 ## System Requirements
-- Python 3.9+
+- Python 3
 - Kaggle API credentials (for downloading the dataset)
 
 ##  How to Run the Project
