@@ -16,34 +16,27 @@ git clone https://github.com/your-username/ForecastingModel.git
 cd ForecastingModel
 ```
 
-### 2- Set up the Environment
-It is highly recommended to use a virtual environment to avoid dependency conflicts.
+### 2- Easy Setup & Run (Recommended for Reviewers)
+The easiest way to test this project is by using the automated `run.sh` script. This script acts as a "Plug & Play" wrapper that handles everything for you: it creates a virtual environment, installs the dependencies from `requirements.txt`, downloads the dataset, and runs the entire pipeline automatically.
 
 ```bash
-# Create a virtual environment named .venv
-python3 -m venv .venv
-
-# Activate it
-# On Linux/MacOS:
-source .venv/bin/activate
-# On Windows:
-# .venv\Scripts\activate
-
-# Install all required libraries
-pip install -r requirements.txt
+chmod +x run.sh
+./run.sh
 ```
 
-### 3- Kaggle API Setup (Dataset Download)
-The pipeline automatically downloads the `GlobalWeatherRepository.csv` dataset using the Kaggle API.
-To allow this, you must have your `kaggle.json` credentials file placed in `~/.kaggle/kaggle.json` (Linux/Mac) or `C:\Users\Username\.kaggle\kaggle.json` (Windows). 
-*If you already have the `data/GlobalWeatherRepository.csv` file manually downloaded, you can skip this step.*
+**⚠️ Important Requirement:** The script automatically downloads the dataset using the Kaggle API. You must have your `kaggle.json` credentials configured (`~/.kaggle/kaggle.json` on Linux/Mac, or `C:\Users\Username\.kaggle\kaggle.json` on Windows). If you already downloaded the dataset manually to `data/GlobalWeatherRepository.csv`, the script will simply skip the download step.
 
-### 4- Execute the Pipeline
-Run the main orchestrator script. This will automatically execute data loading, exploratory data analysis (EDA), model training, 7-day forecasting, and PDF report generation.
+### 3- Manual Execution
+If you prefer to run the project manually step-by-step instead of using the automation script, you need to prepare the environment first:
+1. Create and activate a virtual environment (`python3 -m venv .venv` and `source .venv/bin/activate`).
+2. Install dependencies (`pip install -r requirements.txt`).
+3. Ensure the dataset is located at `data/GlobalWeatherRepository.csv`.
+4. Execute the orchestrator script directly:
 
 ```bash
 python src/main.py
 ```
+*Note: The `src/main.py` script contains the core Python logic and assumes your environment and data are already fully prepared.*
 
 ## Project Structure
 - `src/`: Python source code modules.
