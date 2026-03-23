@@ -6,7 +6,7 @@ This is an end-to-end Machine Learning pipeline that automates the extraction, e
 - Python 3.9+
 - Kaggle API credentials (for downloading the dataset)
 
-##  How to Run the Project (For Recruiters/Reviewers)
+##  How to Run the Project
 
 Because machine learning models and virtual environments are very heavy, they are not included in this repository. Follow these steps to reproduce the entire pipeline locally from scratch:
 
@@ -16,7 +16,7 @@ git clone https://github.com/your-username/ForecastingModel.git
 cd ForecastingModel
 ```
 
-### 2- Easy Setup & Run (Recommended for Reviewers)
+### 2- Easy Setup & Run 
 The easiest way to test this project is by using the automated `run.sh` script. This script acts as a "Plug & Play" wrapper that handles everything for you: it creates a virtual environment, installs the dependencies from `requirements.txt`, downloads the dataset, and runs the entire pipeline automatically.
 
 ```bash
@@ -36,12 +36,6 @@ If you prefer to run the project manually step-by-step instead of using the auto
 ```bash
 python src/main.py
 ```
-*Note: The `src/main.py` script contains the core Python logic and assumes your environment and data are already fully prepared.*
+*Note: The `src/main.py` script contains the core Python logic and assumes your environment and data are already fully prepared.*If you don't want to wait until the model is trained each time you want to run the project,you can simply comment the run_model(df) line of phase 6.
 
-## Project Structure
-- `src/`: Python source code modules.
-- `data/`: Raw downloaded CSV data.
-- `outputs/`: Auto-generated upon execution.
-  - `figures/`: PNG charts from EDA and forecasting.
-  - `models/`: Serialized trained models (`.joblib`).
-  - `reports/`: The final generated PDF (`weather_report.pdf`).
+
