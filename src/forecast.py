@@ -200,6 +200,16 @@ def _plot_forecast(dates, temps, last_date):
 
     fig.tight_layout()
 
+    try:
+        logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "logo.png")
+        if os.path.exists(logo_path):
+            logo = plt.imread(logo_path)
+            newax = fig.add_axes([0.85, 0.95, 0.12, 0.12], anchor='NE', zorder=10)
+            newax.imshow(logo)
+            newax.axis('off')
+    except Exception as e:
+        pass
+
     path = os.path.join(OUTPUT_DIR, "forecast_7days.png")
     fig.savefig(path, dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)

@@ -90,6 +90,13 @@ class WeatherPDF(FPDF):
 def _add_cover(pdf: WeatherPDF):
     """Add a styled cover page."""
     pdf.add_page()
+    
+    # Add PM Accelerator Logo (small, professional)
+    logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "logo.png")
+    if os.path.exists(logo_path):
+        # Place at top right: x=160, y=2, width=35 (higher up, above titles)
+        pdf.image(logo_path, x=168, y=2, w=35)
+
     pdf.ln(60)
     pdf.set_font("Helvetica", "B", 28)
     pdf.set_text_color(44, 62, 80)

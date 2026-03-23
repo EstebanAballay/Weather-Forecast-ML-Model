@@ -82,7 +82,19 @@ CONTINENT_COLORS = {
 }
 
 
+def _add_logo(fig):
+    try:
+        logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "logo.png")
+        if os.path.exists(logo_path):
+            logo = plt.imread(logo_path)
+            newax = fig.add_axes([0.85, 0.95, 0.12, 0.12], anchor='NE', zorder=10)
+            newax.imshow(logo)
+            newax.axis('off')
+    except Exception as e:
+        pass
+
 def _save(fig, name):
+    _add_logo(fig)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, f"{name}.png")
     fig.savefig(path, dpi=150, bbox_inches="tight", facecolor="white")

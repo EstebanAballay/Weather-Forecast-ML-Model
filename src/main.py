@@ -60,7 +60,7 @@ def main():
     run_geography(df)
 
     # Phase 6: Ensemble Model
-    run_model(df)
+    # run_model(df)
 
     # Phase 6.5: 7-Day Forecast (uses saved models, no retraining)
     run_forecast(df)
